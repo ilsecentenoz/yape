@@ -1,0 +1,19 @@
+*{
+	box-sizing: border-box;
+	margin:0;
+	padding:0;
+}
+
+#registrame{
+	background-color:#fbd43b;
+}
+.carousel-size{
+	min-height: 50vh;
+}
+
+.btn-yellow{ 
+	background-color:#fbd43b;
+	color: #fff;
+}
+
+

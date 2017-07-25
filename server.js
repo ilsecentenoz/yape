@@ -21,6 +21,15 @@ app.use(morgan(format));
 
 let router = express.Router();
 
+app.use("/api", express.static(__dirname+ '/api'));
+app.use("/static", express.static(__dirname+'/node_modules'))
+app.use("/static", express.static(__dirname+'/src'))
+
+app.get("/", function(req, res){
+	res.sendFile(__dirname+"/index.html");
+});
+
+
 router.get('/', (req, res) => {
   res.json({ name: 'yape-api',version: "0.0.1"});
 });
